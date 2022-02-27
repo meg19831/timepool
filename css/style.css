@@ -121,6 +121,9 @@ a{
     text-align: center;
     padding-top: 60px;
     color: white;
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
 }
 /* animacion */
 .construimos h2 {
@@ -312,6 +315,17 @@ a{
     background: white;
     opacity: 0.5;
     color: black;
+}
+
+/*aplicando bootstrap en formulario*/
+.contactanos__main{
+    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row {
+    background-repeat: no-repeat;
+
 }
 .completa{
     display: inline-block;
@@ -792,8 +806,51 @@ a{
     }
 }
 
+@media(max-width: 570px){
 
+.construimos h2{
+    font-size: medium;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    
+  
+}
+}
 
+@media(max-width: 500px){
+    .construimos h2{
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        justify-items: center;
+        align-items: center;
+        width: 400px;
+    }
+}
+
+@media(max-width: 415px){
+    .construimos h2{
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        justify-items: center;
+        align-items: center;
+        width: 200px;
+    }
+}
+@media(max-width: 470px){
+    .construimos__title{
+        text-align: center;
+        display: inline;
+        justify-items: center;
+        align-items: center;
+    }
+}
 @media(max-width:1000px){
     .planopileta{
     grid-template-columns: auto;
