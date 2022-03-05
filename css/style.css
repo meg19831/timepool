@@ -705,6 +705,21 @@ transition:all 10s;
     justify-content: center;
     margin: auto;
 }
+.direccionimagenes__modelos{
+    width: 200px;
+    height: 140px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.direccionimagenes__modelos {
+    width: 50%;
+    height: 50%;
+    transition: transform 0.5s;
+}
+.direccionimagenes__modelos:hover {
+    transform: scale(1.1);
+}
+
 /* estilos de la SECCION GALERIA*/
 
 .galeria{
