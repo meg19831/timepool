@@ -1,73 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "./scss/main";
+ *   |         ^^^^^^^^^^^^^
+ *   '
+ *   style.scss 1:9  root stylesheet */
 
-div {
-  background-image: url(../assets/Imagenes/imagentitulo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: bottom;
-}
-
-.icono {
-  width: 100px;
-}
-
-.container-header {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row-reverse;
-  list-style-type: none;
-}
-
-.container-header__background {
-  display: flex;
-  flex-flow: row;
-  background-color: #2891e6;
-  border-radius: 5px;
-  margin-left: 15px;
-  text-align: center;
-  list-style-type: none;
-  margin-bottom: 15px;
-}
-
-h1 {
-  margin-left: 120px;
-  font-family: fantasy;
-  text-align: justify;
-  padding-bottom: 15px;
-  display: flex;
-  justify-content: flex-start;
-  background-color: transparent;
-}
-
-nav {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: space-around;
-}
-
-nav ul li a {
-  font-family: sans-serif;
-  margin-right: 25px;
-  display: inline-block;
-}
-
-a {
-  color: white;
-  font-weight: bold;
-  font-family: sans-serif;
-  margin-left: 25px;
-  margin-right: 25px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"./scss/main\";\d\a   \2502          ^^^^^^^^^^^^^\a   \2575 \a   style.scss 1:9  root stylesheet";
 }
