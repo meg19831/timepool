@@ -1,0 +1,44 @@
+.estilofooter__redessociales{
+    text-align:center;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.estilofooter__redessociales--estilo{
+    color: white;
+    font-weight:bold;
+    font-family: sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: hsl(207, 79%, 53%);
+    background-position:cover;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.construimos__enlace{
+    display: flex;
+    flex-flow:row-reverse;
+}
+
+.final{
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.estilofooter{
+    background-position: bottom;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
+}
