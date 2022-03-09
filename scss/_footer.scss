@@ -42,3 +42,30 @@
     text-decoration: none;
     
 }
+
+.estilofooter{
+    background-position: bottom;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.redessociales{
+    background-color: hsl(207, 79%, 53%);
+    background-position:cover;
+    border-radius: 5px;
+    text-align:center;
+    list-style-type: none;
+    display: flex;
+    flex-flow: nowrap ;
+    justify-content: space-between;
+}
+
+.final{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    background-position: bottom;
+    background-size: cover; 
+    margin: 0;
+    padding: 15px;
+}
