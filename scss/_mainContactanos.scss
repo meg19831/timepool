@@ -1,0 +1,104 @@
+//seccion contactanos//
+.contactanos__main{
+    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .seccioncontactanos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-image: url(../assets/Imagenes/imagen\ de\ contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.9;
+    color: white;
+    font-size: larger;
+  
+    h2 {
+      display: inline-block;
+      justify-content: center;
+      width: 300px;
+      background-color: white;
+      opacity: 0.7;
+      color: black;
+      transition: all 10s;
+  
+      &:hover {
+        width: 600px;
+      }
+    }
+  }
+  
+  /*animacion a seccion contactanos*/
+  .seccioncontactanos{
+    h2{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+    }
+    p{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: -webkit-match-parent;
+    line-height: 1.5;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: white;
+    opacity: 0.5;
+    color: black;
+    }
+  }
+  
+  /*aplicando bootstrap en formulario*/
+  
+  .contactanos__main {
+    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .row {
+    background-repeat: no-repeat;
+  }
+  
+  .completa {
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 120px;
+    margin-right: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-top: cadetblue;
+    border-bottom: cadetblue;
+    margin-top: 10px;
+  }
+  
+  .enviar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .volver {
+    display: flex;
+    flex-flow: row;
+    justify-content: start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-top: solid cadetblue;
+    border-bottom: solid cadetblue;
+    color: black;
+    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-size: cover;
+  }

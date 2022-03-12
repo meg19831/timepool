@@ -33,12 +33,32 @@
     .container-header{
         background-position:relative;
     }
+    .planopileta{
+        grid-template-columns: repeat(2 1fr);
+        
+    }
+    .planopileta__imagen{
+        width: 40%;
+        height: 40%;
+    }
 }
 @media (max-width: 812px){
     .diseños__title{
         color: aliceblue;
 
     }
+    .planopileta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .planopileta__parrafo{
+        font-size: medium;
+        margin: 0 auto;
+    }
+    
 }
 @media(max-width: 790px){
     .icono{
@@ -60,13 +80,14 @@
 @media(max-width:768px){
     .planopileta__imagen{
         
-        width: 80%;
-        height: 80%;
+        width: 40%;
+        height: 40%;
         grid-template-columns: repeat(2 1fr);
         
 }
         .planopileta__parrafo{
             font-size: small;
+            margin: o auto;
         }
 
         .construimos__title .somos__title .iluminacion__title .galeria__title .diseños__title .seccioncontactanos__title{
@@ -90,7 +111,12 @@
     display: flex;
     position: relative;
     }
-
+    .planopileta__parrafo{
+        font-size: small;
+    }
+    .planopileta__imagen{
+        width: auto;
+    }
 }
 @media (max-width: 600px){
     .somos__title{
@@ -126,13 +152,16 @@
         transition: none;
     }
     .construimos__parrafo{
-        font-size: medium;
+        font-size: small;
+    }
+    .construimos__title{
+        font-size: large;
     }
 }
 
 @media(max-width: 570px){
 .construimos h2{
-    font-size: medium;
+    font-size: large;
     text-align: center;
     display: flex;
     flex-flow: row;
@@ -146,12 +175,19 @@
     .direccionimagenes__modelos{
         display:flex;
         flex-direction: column;
+        margin: 0 auto;
         width: 180px;
         height: auto;
         font-size: medium;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .direccionimagenes__elegidiseño{
         font-size: small;
+    }
+    .construimos__parrafo{
+        font-size: small;
+        
     }
 }
 @media(max-width: 500px){
@@ -162,11 +198,12 @@
         justify-items: center;
         align-items: center;
         width: 400px;
+        font-size: medium;
     }
 }
 @media(max-width:500px){
     .galeria__parrafo{
-        font-size: medium;
+        font-size: small;
     }
 }
 @media(max-width: 470px){
