@@ -1,0 +1,8 @@
+$estilos:(color: blue, border, radius);
+
+.nav-link{
+    background-color: map-get($estilos,color);
+    text-align: map-get($estilos,color);
+    color: map-get($estilos,color);
+
+}

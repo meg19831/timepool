@@ -38,6 +38,7 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
+    @extend .containerTemple;
     }
     img{
       background-position: contain;
@@ -154,10 +155,27 @@
     flex-flow: wrap;
     justify-content: center;
     align-content: center;
-    border-radius: 5px;
-    border-top: solid cadetblue;
-    border-bottom: solid cadetblue;
+    @include button (5px);
     color: black;
     text-decoration: none;
     
   }
+
+  .maps{
+    .btn-whatsapp, .btn-facebook, .btn-instagram {
+      border-radius: 5px;
+      padding-left: 5px;
+    }
+  }
+
+      
+  $rrss:(
+    whatsapp:rgb(9, 145, 9),
+    facebook: rgb(0, 89, 255),
+    instagram: #c92d8f,
+);
+@each $rs, $color in $rrss {
+    .btn-#{$rs} {
+        background-color:  $color;
+    }
+}

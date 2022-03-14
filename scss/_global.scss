@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+//aplicados a los h2
+
+.containerTemple{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+@mixin button($border-radius) {
+    border-radius: 5px;
+    border-top: solid cadetblue;
+    border-bottom: solid cadetblue;
+}
+

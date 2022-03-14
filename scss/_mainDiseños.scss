@@ -21,15 +21,15 @@
     background-color: white;
     opacity: 0.7;
     color: black;
+    @extend .containerTemple;
     transition: all 10s;
-
+} 
     &:hover {
         width: 600px;
     p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: -webkit-match-parent;
     line-height: 1.5;
-    font-weight: bold;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: 40px;
@@ -37,7 +37,8 @@
     background: white;
     opacity: 0.5;
     color: black;
-    
+    font-weight: bold;
+    }
     img{
     margin-left: 50px;
     margin: auto;
@@ -45,8 +46,6 @@
     background-size: cover;
     background-position: center;
     width: 100;
-    }
-    }    
     }
     }
 }
@@ -134,7 +133,6 @@
     justify-content: center;
     align-content: center;
     margin:0 auto;
-    width: 100;
     background-image: url(../assets/Imagenes/imagentitulo.jpg);
     background-size: cover;
     p{
@@ -148,27 +146,27 @@
     justify-content: center;
     padding-left: 20px;
     padding-top: 20px;
-    
+    }
     img{
-    width: 280px;
+    width: 180px;
     height: 165px;
     padding: 10px;
     display: flex;
     flex-flow: column;
     align-self: center;
-    width: 200px;
+    width: 100px;
     height: 140px;
     cursor: pointer;
     overflow: hidden;
     width: 50%;
     height: 50%;
     transition: transform 0.5s;
-
+}
     &:hover {
     transform: scale(1.1);
+    
     }
-    }
-}
+
 }
 .diseñosp__diseños{
     div{
@@ -195,16 +193,13 @@
     }
     }
 }
-
 .volver{
     display: flex;
     flex-flow: row;
     justify-content: start;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border-top: solid cadetblue;
-    border-bottom: solid cadetblue;
+    @include button (5px);
     color: black;
     background-image: url(../assets/Imagenes/imagentitulo.jpg);
     background-size: cover;

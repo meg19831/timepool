@@ -20,6 +20,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding-top: 30px;
+    @extend .containerTemple;
     transition: all 10s;
 
     &:hover {
@@ -55,9 +56,7 @@
     justify-content: start;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border-top: solid cadetblue;
-    border-bottom: solid cadetblue;
+    @include button (5px);
     color: black;
     background-image: url(../assets/Imagenes/imagentitulo.jpg);
     background-size: cover;
