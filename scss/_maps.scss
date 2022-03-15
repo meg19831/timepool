@@ -1,8 +1,10 @@
-$estilos:(color: blue, border, radius);
-
-.nav-link{
-    background-color: map-get($estilos,color);
-    text-align: map-get($estilos,color);
-    color: map-get($estilos,color);
-
+$rrss:(
+    whatsapp:rgb(9, 145, 9),
+    facebook: rgb(0, 89, 255),
+    instagram: #c92d8f,
+);
+@each $rs, $color in $rrss {
+    .btn-#{$rs} {
+        background-color:  $color;
+    }
 }

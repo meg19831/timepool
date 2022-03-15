@@ -169,13 +169,3 @@
   }
 
       
-  $rrss:(
-    whatsapp:rgb(9, 145, 9),
-    facebook: rgb(0, 89, 255),
-    instagram: #c92d8f,
-);
-@each $rs, $color in $rrss {
-    .btn-#{$rs} {
-        background-color:  $color;
-    }
-}

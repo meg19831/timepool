@@ -141,8 +141,6 @@
     font-weight: bold;
     opacity: 0.9;
     color: black;
-    display: flex;
-    flex-flow: row;
     justify-content: center;
     padding-left: 20px;
     padding-top: 20px;
@@ -151,15 +149,9 @@
     width: 180px;
     height: 165px;
     padding: 10px;
-    display: flex;
-    flex-flow: column;
     align-self: center;
-    width: 100px;
-    height: 140px;
     cursor: pointer;
     overflow: hidden;
-    width: 50%;
-    height: 50%;
     transition: transform 0.5s;
 }
     &:hover {
