@@ -336,6 +336,8 @@ a {
 .maps .btn-whatsapp, .maps .btn-facebook, .maps .btn-instagram {
   border-radius: 5px;
   padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .contactanos__main {
@@ -642,11 +644,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0 auto;
   background-image: url(../assets/Imagenes/imagentitulo.jpg);
   background-size: cover;
@@ -680,7 +682,7 @@ a {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.direccionimagenes:hover {
+.direccionimagenes img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

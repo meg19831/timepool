@@ -129,9 +129,10 @@
 
 .direccionimagenes {
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
+    flex-flow:row;
+    flex-direction: row;
+    justify-content:flex-start;
+    
     margin:0 auto;
     background-image: url(../assets/Imagenes/imagentitulo.jpg);
     background-size: cover;
@@ -153,10 +154,10 @@
     cursor: pointer;
     overflow: hidden;
     transition: transform 0.5s;
-}
+
     &:hover {
     transform: scale(1.1);
-    
+    }
     }
 
 }
