@@ -2,7 +2,7 @@
 .diseños {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    background-image: url(../assets/Imagenes/varios-3.jpg);
+    background-image: url(../assets/Imagenes/imagen_de_diseño.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,7 +13,7 @@
     text-align: center;
     padding-top: 30px;
     color: black;
-  
+}
     h2 {
     display: inline-block;
     justify-content: center;
@@ -47,7 +47,7 @@
     background-position: center;
     width: 100;
     }
-    }
+    
 }
 /* debajo agrego animacion*/
 
@@ -132,7 +132,6 @@
     flex-flow:row;
     flex-direction: row;
     justify-content:flex-start;
-    
     margin:0 auto;
     background-image: url(../assets/Imagenes/imagentitulo.jpg);
     background-size: cover;
