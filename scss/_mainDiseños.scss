@@ -1,6 +1,6 @@
 //estilos de seccion diseños//
 .diseños {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: center;
     background-image: url(../assets/Imagenes/imagen_de_diseño.png);
     background-size: cover;
@@ -9,7 +9,7 @@
     opacity: 0.9;
     color: white;
     font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: center;
     padding-top: 30px;
     color: black;
@@ -28,7 +28,7 @@
         width: 600px;
     }
     p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: -webkit-match-parent;
     line-height: 1.5;
     padding-top: 40px;
@@ -136,7 +136,7 @@
     background-image: url(../assets/Imagenes/imagentitulo.jpg);
     background-size: cover;
     p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     font-size: x-large;
     font-weight: bold;
     opacity: 0.9;
@@ -167,7 +167,7 @@
     flex-flow: row;
     justify-content: center;
     align-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: center;
     background-image: url(../assets/Imagenes/varios-3.jpg);
     background-size: cover;

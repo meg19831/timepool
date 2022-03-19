@@ -1,5 +1,5 @@
 .galeria {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: center;
     background-image: url(../assets/Imagenes/galeria.jpg);
     background-size: cover;
@@ -17,7 +17,7 @@
     background-color: white;
     opacity: 0.7;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: center;
     padding-top: 30px;
     @extend .containerTemple;
@@ -27,7 +27,7 @@
         width: 600px;
 
     p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: -webkit-match-parent;
     line-height: 1.5;
     font-weight: bold;

@@ -7,7 +7,7 @@
   }
   
   .seccioncontactanos {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     text-align: center;
     background-image: url(../assets/Imagenes/imagen_de_contacto.jpg);
     background-size: cover;
@@ -36,13 +36,13 @@
   /*animacion a seccion contactanos*/
   .seccioncontactanos{
     h2{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: $fuente_principal;
     text-align: center;
     padding-top: 30px;
     color: black;
     }
     p{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: $fuente_principal;
     text-align: -webkit-match-parent;
     line-height: 1.5;
     font-weight: bold;
@@ -74,7 +74,7 @@
     background-color: white;
     color: black;
     opacity: 0.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     margin-left: 120px;
     margin-right: 40px;
     border-radius: 5px;
@@ -85,7 +85,7 @@
   }
   
   .enviar {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente_principal;
     font-size: large;
     padding: 5px;
     margin: 10px;
