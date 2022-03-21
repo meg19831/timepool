@@ -1,7 +1,6 @@
 .construimos {
     font-family: $fuente_principal;
     text-align: center;
-   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: cover;
@@ -11,6 +10,7 @@
 }
     h2{
       font-family: $fuente_principal;
+      position: relative;
       text-align: center;
       padding-top: 60px;
       color: white;
