@@ -2,10 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.containerTemple, .galeria h2, .diseños h2, .seccioncontactanos h2, h2 {
+.containerTemple, h2, .seccioncontactanos h2, .diseños h2, .galeria h2 {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -23,15 +24,27 @@ div {
 }
 
 .container-header {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   list-style-type: none;
 }
 
 .container-header__background {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
   background-color: #2891e6;
   border-radius: 5px;
   margin-left: 15px;
@@ -45,8 +58,12 @@ h1 {
   font-family: fantasy;
   text-align: justify;
   padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: transparent;
 }
 
@@ -57,11 +74,20 @@ nav {
 
 ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 nav ul li a {
@@ -96,9 +122,16 @@ h2 {
   text-align: center;
   padding-top: 60px;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 p {
@@ -107,10 +140,18 @@ p {
   text-align: -webkit-match-parent;
   line-height: 1.5;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin: 0 auto;
   margin-left: 170px;
   margin-top: 80px;
@@ -128,6 +169,17 @@ img {
   opacity: 0.9;
 }
 
+@-webkit-keyframes construimos__parrafo {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+
 @keyframes construimos__parrafo {
   0% {
     -webkit-transform: translateX(0);
@@ -138,6 +190,18 @@ img {
     transform: translateX(-100px);
   }
 }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
@@ -148,10 +212,13 @@ img {
     transform: translateX(-100px);
   }
 }
+
 /* animacion */
 .construimos h2 {
   display: inline-block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h2 {
@@ -160,7 +227,9 @@ h2 {
   opacity: 0.7;
   color: black;
 }
+
 h2:hover {
+  -webkit-transition: all 10s;
   transition: all 10s;
   width: 800px;
 }
@@ -169,17 +238,29 @@ h2:hover {
   background-image: url(../assets/imagenes/imagentitulo.jpg);
   margin: o auto;
   padding-top: 20px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  align-content: center;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   gap: 20px;
   margin: 0 auto;
 }
+
 .planopileta p {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: 1/1/3/3;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   font-family: Segoe UI;
   font-size: x-large;
   text-align: -webkit-match-parent;
@@ -193,6 +274,7 @@ h2:hover {
   opacity: 0.5;
   color: black;
 }
+
 .planopileta div {
   width: 300px;
   height: 220px;
@@ -204,10 +286,15 @@ h2:hover {
 .planopileta__imagen img {
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
+
 .planopileta__imagen img:hover {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .contactanos {
@@ -218,10 +305,16 @@ h2:hover {
 }
 
 .construimos__enlace {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  align-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   border-radius: 5px;
   border-top: solid cadetblue;
   border-bottom: solid cadetblue;
@@ -246,15 +339,20 @@ h2:hover {
   color: white;
   font-size: larger;
 }
+
 .seccioncontactanos h2 {
   display: inline-block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 300px;
   background-color: white;
   opacity: 0.7;
   color: black;
+  -webkit-transition: all 10s;
   transition: all 10s;
 }
+
 .seccioncontactanos h2:hover {
   width: 600px;
 }
@@ -266,6 +364,7 @@ h2:hover {
   padding-top: 30px;
   color: black;
 }
+
 .seccioncontactanos p {
   font-family: Segoe UI;
   text-align: -webkit-match-parent;
@@ -293,7 +392,9 @@ h2:hover {
 
 .completa {
   display: inline-block;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
   color: black;
   opacity: 0.5;
@@ -315,9 +416,16 @@ h2:hover {
 }
 
 .volver {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -339,16 +447,25 @@ h2:hover {
   background-repeat: no-repeat;
   background-image: url(../assets/imagenes/imagen_de_contacto.jpg);
 }
+
 .diseños h2 {
   font-family: Segoe UI;
   position: relative;
   text-align: center;
   padding-top: 60px;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .diseños p {
   font-family: Segoe UI;
   text-align: -webkit-match-parent;
@@ -375,13 +492,17 @@ h2:hover {
 /* debajo agrego animacion*/
 .diseños h2 {
   display: inline-block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 300px;
   background-color: white;
   opacity: 0.7;
   color: black;
+  -webkit-transition: all 10s;
   transition: all 10s;
 }
+
 .diseños h2:hover {
   width: 600px;
 }
@@ -390,8 +511,10 @@ h2:hover {
   -webkit-animation: wobble-hor-top 0.8s both;
   animation: wobble-hor-top 0.8s both;
 }
-@keyframes direccionimagenes__elegidiseño {
-  0%, 100% {
+
+@-webkit-keyframes direccionimagenes__elegidiseño {
+  0%,
+  100% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
     -webkit-transform-origin: 50% 50%;
@@ -418,8 +541,70 @@ h2:hover {
     transform: translateX(-6px) rotate(1.2deg);
   }
 }
+
+@keyframes direccionimagenes__elegidiseño {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@-webkit-keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
 @keyframes wobble-hor-top {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
     -webkit-transform-origin: 50% 50%;
@@ -449,42 +634,66 @@ h2:hover {
 
 .direccionimagenes {
   display: inline-block;
-  flex-direction: row;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0 auto;
   background-image: url(../assets/imagenes/imagentitulo.jpg);
   background-size: cover;
 }
+
 .direccionimagenes p {
   font-family: Segoe UI;
   font-size: x-large;
   font-weight: bold;
   opacity: 0.9;
   color: black;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 20px;
   padding-top: 20px;
 }
+
 .direccionimagenes img {
   width: 180px;
   height: 165px;
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   cursor: pointer;
   overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
+
 .direccionimagenes img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .diseñosp__diseños div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: Segoe UI;
   text-align: center;
   background-image: url(../assets/imagenes/varios-3.jpg);
@@ -503,9 +712,16 @@ h2:hover {
 }
 
 .volver {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -528,9 +744,12 @@ h2:hover {
   font-weight: bold;
   font-size: larger;
 }
+
 .galeria h2 {
   display: inline-block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 300px;
   background-color: white;
   opacity: 0.7;
@@ -538,11 +757,14 @@ h2:hover {
   font-family: Segoe UI;
   text-align: center;
   padding-top: 30px;
+  -webkit-transition: all 10s;
   transition: all 10s;
 }
+
 .galeria h2:hover {
   width: 600px;
 }
+
 .galeria h2:hover p {
   font-family: Segoe UI;
   text-align: -webkit-match-parent;
@@ -565,9 +787,16 @@ h2:hover {
 }
 
 .volver {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -589,12 +818,14 @@ h2:hover {
   color: white;
   font-size: larger;
 }
+
 .somos h2 {
   font-family: Segoe UI;
   text-align: center;
   padding-top: 30px;
   color: black;
 }
+
 .somos p {
   font-family: Segoe UI;
   text-align: -webkit-match-parent;
@@ -612,24 +843,36 @@ h2:hover {
 /*agregando animaciones*/
 .somos h2 {
   display: inline-block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 300px;
   background-color: white;
   opacity: 0.7;
   color: black;
+  -webkit-transition: all 10s;
   transition: all 10s;
 }
+
 .somos h2:hover {
   width: 600px;
 }
 
 .somos_somos img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
   width: 100;
 }
+
 .somos_somos p {
   font-family: Segoe UI;
   font-size: x-large;
@@ -649,9 +892,16 @@ h2:hover {
 }
 
 .volver {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -665,10 +915,18 @@ h2:hover {
 .estilofooter__redessociales {
   text-align: center;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -687,14 +945,26 @@ h2:hover {
 }
 
 .construimos__enlace {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
 }
 
 .final {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-position: bottom;
   background-repeat: no-repeat;
   margin: 0;
@@ -719,15 +989,25 @@ h2:hover {
   border-radius: 5px;
   text-align: center;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: nowrap;
-  justify-content: space-between;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .final {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: nowrap;
-  justify-content: space-between;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-position: bottom;
   background-size: cover;
   margin: 0;
@@ -736,66 +1016,105 @@ h2:hover {
 
 @media (max-width: 1414px) {
   .direccionimagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+
 @media (max-width: 1242px) {
   .direccionimagenes__elegidiseño {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 @media (max-width: 874px) {
   .estilofooter__redessociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: -webkit-gradient(linear, left cadetblue #2891e6, );
     background-image: linear-gradient(to left cadetblue #2891e6);
   }
 }
+
 @media (max-width: 874px) {
   .volver {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
+
 @media (max-width: 838px) {
   .container-header {
     background-position: relative;
   }
-
   .planopileta {
-    grid-template-columns: repeat(2 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2 1fr);
   }
-
   .planopileta__imagen {
     width: 40%;
     height: 40%;
   }
 }
+
 @media (max-width: 812px) {
   .diseños__title {
     color: aliceblue;
   }
-
   .planopileta {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     justify-items: center;
     margin: 0 auto;
   }
-
   .planopileta__parrafo {
     font-size: medium;
     margin: 0 auto;
   }
 }
+
 @media (max-width: 790px) {
   .icono {
     width: 50px;
@@ -803,113 +1122,147 @@ h2:hover {
     margin: auto;
   }
 }
+
 @media (max-width: 768px) {
   h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
   }
 }
+
 @media (max-width: 768px) {
   .planopileta__imagen {
     width: 40%;
     height: 40%;
-    grid-template-columns: repeat(2 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2 1fr);
   }
-
   .planopileta__parrafo {
     font-size: small;
     margin: o auto;
   }
-
   .construimos__title .somos__title .iluminacion__title .galeria__title .diseños__title .seccioncontactanos__title {
+    -webkit-transition: none;
     transition: none;
   }
-
   .construimos__parrafo {
     font-size: 20px;
   }
 }
+
 @media (max-width: 622px) {
   .formulario {
     display: inline-block;
     padding-left: 30px;
   }
 }
+
 @media (max-width: 600px) {
   footer .final img {
     width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
   }
-
   .planopileta__parrafo {
     font-size: small;
   }
-
   .planopileta__imagen {
     width: auto;
   }
 }
+
 @media (max-width: 600px) {
   .somos__title {
     color: aliceblue;
   }
 }
+
 @media (max-width: 588px) {
   .seccioncontactanos__title {
     color: aliceblue;
   }
 }
+
 @media (max-width: 583px) {
   .imagenessomos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
 }
+
 @media (max-width: 576px) {
   h1 {
     font-size: 25px;
   }
 }
+
 @media (max-width: 576px) {
   .planopileta__imagen {
     width: 50%;
     height: 70px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   h2 {
     font-size: large;
+    -webkit-transition: none;
     transition: none;
   }
-
   .construimos__parrafo {
     font-size: small;
   }
-
   .construimos__title {
     font-size: large;
   }
 }
+
 @media (max-width: 570px) {
   .construimos h2 {
     font-size: large;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
     width: 400px;
   }
 }
+
 @media (max-width: 530px) {
   .direccionimagenes__modelos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
     width: 180px;
     height: auto;
@@ -917,91 +1270,112 @@ h2:hover {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
   .direccionimagenes__elegidiseño {
     font-size: small;
   }
-
   .construimos__parrafo {
     font-size: small;
   }
 }
+
 @media (max-width: 500px) {
   .construimos h2 {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 400px;
     font-size: medium;
   }
 }
+
 @media (max-width: 500px) {
   .galeria__parrafo {
     font-size: small;
   }
 }
+
 @media (max-width: 470px) {
   .construimos__title {
     text-align: center;
     display: inline;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 @media (max-width: 415px) {
   .construimos h2 {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 200px;
   }
 }
+
 @media (max-width: 370px) {
   .diseños__parrafo {
     font-size: medium;
   }
-
   .diseñosp {
     font-size: medium;
   }
 }
+
 @media (max-width: 370px) {
   .iluminacion__parrafo {
     font-size: mediabsolute;
   }
 }
+
 @media (max-width: 370px) {
   .descripcion__luces--parrafo {
     font-size: medium;
   }
 }
+
 @media (max-width: 360px) {
   footer div a {
     display: none;
   }
 }
+
 @media (max-width: 360px) {
   footer .whatsapp {
     display: inline-block;
   }
 }
+
 @media (max-width: 350px) {
   .somos__parrafo {
     font-size: medium;
   }
-
   .tecontamos {
     font-size: medium;
   }
 }
+
 @media (max-width: 350px) {
   .galeria__parrafo {
     font-size: small;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
