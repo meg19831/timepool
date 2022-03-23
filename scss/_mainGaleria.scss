@@ -1,7 +1,7 @@
 .galeria {
     font-family: $fuente_principal;
     text-align: center;
-    background-image: url(../assets/Imagenes/galeria.jpg);
+    background-image: url(../assets/imagenes/galeria.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -58,6 +58,6 @@
     margin-bottom: 5px;
     @include button (5px);
     color: black;
-    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-image: url(../assets/imagenes/imagentitulo.jpg);
     background-size: cover;
 }

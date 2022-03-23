@@ -1,6 +1,6 @@
 //seccion contactanos//
 .contactanos__main{
-    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-image: url(../assets/imagenes/imagentitulo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -9,7 +9,7 @@
   .seccioncontactanos {
     font-family: $fuente_principal;
     text-align: center;
-    background-image: url(../assets/Imagenes/imagen_de_contacto.jpg);
+    background-image: url(../assets/imagenes/imagen_de_contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -59,7 +59,7 @@
   /*aplicando bootstrap en formulario*/
   
   .contactanos__main {
-    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-image: url(../assets/imagenes/imagentitulo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -99,6 +99,6 @@
     margin-bottom: 5px;
     @include button (5px);
     color: black;
-    background-image: url(../assets/Imagenes/imagentitulo.jpg);
+    background-image: url(../assets/imagenes/imagentitulo.jpg);
     background-size: cover;
   }
