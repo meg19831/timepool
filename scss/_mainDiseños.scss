@@ -12,6 +12,7 @@
 }
     h2 {
         font-family: $fuente_principal;
+        font-size: larger;
         position: relative;
         text-align: center;
         padding-top: 60px;
@@ -36,15 +37,6 @@
     }
 }
 
-
-    .diseños__imagen{
-    margin-left: 50px;
-    margin: auto;
-    background-image: url(../assets/imagenes/imagenportada.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100;
-    }
 /* debajo agrego animacion*/
 
 .diseños{
@@ -139,25 +131,27 @@
 }
 
 .direccionimagenes {
-    display:inline-block;
-    flex-direction: row;
-    justify-content:flex-start;
-    margin:0 auto;
-    background-image: url(../assets/imagenes/imagentitulo.jpg);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: auto;
+    width: 100;
+    background-image: url(../assets/Imagenes/imagentitulo.jpg);
     background-size: cover;
+    
     p{
     font-family: $fuente_principal;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
-    opacity: 0.9;
+    opacity: 0.7;
     color: black;
     justify-content: center;
     padding-left: 20px;
     padding-top: 20px;
     }
     img{
-    width: 180px;
-    height: 165px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -175,8 +169,6 @@
 .diseñosp__diseños{
     div{
     p{
-        display: flex;
-    flex-flow: row;
     justify-content: center;
     align-content: center;
     font-family: $fuente_principal;

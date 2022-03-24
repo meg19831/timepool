@@ -7,48 +7,53 @@
     background-position: bottom;
     opacity: 0.9;
     color: white;
-    font-size: larger;
+    font-size: medium;
 
     h2 {
-    display: inline-block;
-    justify-content: center;
-    width: 300px;
-    background-color: white;
-    opacity: 0.7;
-    color: black;
-    @extend .containerTemple;
-    transition: all 10s;
+        font-family: $fuente_principal;
+        position: relative;
+        text-align: center;
+        padding-top: 60px;
+        color: white;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        @extend .containerTemple;
 
     &:hover {
         width: 600px;
     }
-    }
-}
+    
 
+    p{
+        font-family: $fuente_principal;
+        text-align: -webkit-match-parent;
+        line-height: 1.5;
+        font-weight: bold;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: white;
+        opacity: 0.7;
+        color: black;
+        }
+}
+}
 /*agragando animacion a iluninacion*/
 .iluminacion{
     h2{
     font-family: $fuente_principal;
     text-align: center;
     padding-top: 30px;
-    color: gray;
-}
-    p{
-    font-family: $fuente_principal;
-    text-align: -webkit-match-parent;
-    line-height: 1.5;
-    font-weight: bold;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background: white;
-    opacity: 0.7;
     color: black;
-    }
+    background-color:white;
+        opacity: 0.7;
+        &:hover{
+        width: 600px;
 }
-
-
+}
+}
 .descripcion__luces{
     background-image: url(../assets/imagenes/imagentitulo.jpg);
     background-repeat: no-repeat;
@@ -58,7 +63,7 @@
 
 p{
     font-family: $fuente_principal;
-    font-size: x-large;
+    font-size: medium;
     text-align: center;
     line-height: 1.5;
     background-color:cadetblue;
@@ -69,9 +74,9 @@ p{
     opacity: 0.5;
     color: white;
     text-shadow: black;
-    margin: 60px 60px 60px 60px;
     position: relative;
-    margin:auto;
+    margin: 0 auto;
+    margin-left: 200px;
     }
 }
 .volver {
@@ -84,4 +89,4 @@ p{
     color: black;
     background-image: url(../assets/imagenes/imagentitulo.jpg);
     background-size: cover;
-  }
+}

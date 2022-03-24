@@ -341,6 +341,7 @@ h2:hover {
 }
 .diseños h2 {
   font-family: Segoe UI;
+  font-size: larger;
   position: relative;
   text-align: center;
   padding-top: 60px;
@@ -361,15 +362,6 @@ h2:hover {
   background: white;
   opacity: 0.5;
   color: black;
-}
-
-.diseños__imagen {
-  margin-left: 50px;
-  margin: auto;
-  background-image: url(../assets/imagenes/imagenportada.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100;
 }
 
 /* debajo agrego animacion*/
@@ -448,26 +440,27 @@ h2:hover {
 }
 
 .direccionimagenes {
-  display: inline-block;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 auto;
-  background-image: url(../assets/imagenes/imagentitulo.jpg);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin: auto;
+  width: 100;
+  background-image: url(../assets/Imagenes/imagentitulo.jpg);
   background-size: cover;
 }
 .direccionimagenes p {
   font-family: Segoe UI;
-  font-size: x-large;
+  font-size: large;
   font-weight: bold;
-  opacity: 0.9;
+  opacity: 0.7;
   color: black;
   justify-content: center;
   padding-left: 20px;
   padding-top: 20px;
 }
 .direccionimagenes img {
-  width: 180px;
-  height: 165px;
+  width: 200px;
+  height: 200px;
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -481,8 +474,6 @@ h2:hover {
 }
 
 .diseñosp__diseños div p {
-  display: flex;
-  flex-flow: row;
   justify-content: center;
   align-content: center;
   font-family: Segoe UI;
