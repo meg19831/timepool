@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.containerTemple, .galeria h2, .diseños h2, .seccioncontactanos h2, h2 {
+.containerTemple, .iluminacion h2, .galeria h2, .diseños h2, .seccioncontactanos h2, h2 {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -653,6 +653,85 @@ h2:hover {
   background-size: cover;
 }
 
+.iluminacion {
+  font-family: Segoe UI;
+  text-align: center;
+  background-image: url(../assets/imagenes/iluminacion1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 0.9;
+  color: white;
+  font-size: medium;
+}
+.iluminacion h2 {
+  display: inline-block;
+  justify-content: center;
+  width: 300px;
+  background-color: white;
+  opacity: 0.7;
+  color: black;
+  font-family: Segoe UI;
+  text-align: center;
+  padding-top: 30px;
+  transition: all 10s;
+}
+.iluminacion h2:hover {
+  width: 600px;
+}
+.iluminacion h2:hover p {
+  font-family: Segoe UI;
+  text-align: -webkit-match-parent;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background: white;
+  opacity: 0.7;
+  color: black;
+  position: relative;
+}
+
+.descripcion__luces {
+  background-image: url(../assets/imagenes/imagentitulo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+.descripcion__luces p {
+  font-family: Segoe UI;
+  font-size: medium;
+  text-align: center;
+  line-height: 1.5;
+  background-color: cadetblue;
+  background-position: center;
+  border: gray;
+  border-style: solid;
+  background: size 100%;
+  opacity: 0.5;
+  color: white;
+  text-shadow: black;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 200px;
+}
+
+.volver {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border-top: solid cadetblue;
+  border-bottom: solid cadetblue;
+  color: black;
+  background-image: url(../assets/imagenes/imagentitulo.jpg);
+  background-size: cover;
+}
+
 .estilofooter__redessociales {
   text-align: center;
   list-style-type: none;
@@ -994,5 +1073,3 @@ h2:hover {
     font-size: small;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
